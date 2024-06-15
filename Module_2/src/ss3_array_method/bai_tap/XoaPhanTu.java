@@ -15,7 +15,6 @@ public class XoaPhanTu {
         System.out.print("Nhập phần tử cần xóa: ");
         int x = sc.nextInt();
 
-
         int index = -1;
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == x) {
