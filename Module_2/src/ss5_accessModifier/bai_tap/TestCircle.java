@@ -6,5 +6,6 @@ public class TestCircle {
 
         System.out.println(c.getArea());
         System.out.println(c.getRadius());
+        System.out.println(c.getColor());
     }
 }
