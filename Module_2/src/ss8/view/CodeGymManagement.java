@@ -4,7 +4,7 @@ import ss8.controller.StudentController;
 import ss8.controller.TeacherController;
 
 import java.util.Scanner;
-
+//view -> control -> service -> repo
 public class CodeGymManagement {
     private final static Scanner sc = new Scanner(System.in);
 
@@ -16,6 +16,7 @@ public class CodeGymManagement {
 //        TeacherController teacherController = new TeacherController();
 //        teacherController.displayTeacher();
         chooseFunction();
+
     }
 
     public static void chooseFunction() {
@@ -56,13 +57,15 @@ public class CodeGymManagement {
                     studentController.displayStudent();
                     break;
                 case 2:
-                    System.out.println("Thêm mới:");
+                    studentController.addStudent();
                     break;
                 case 3:
                     System.out.println("Chỉnh sửa:");
+                    studentController.editStudent();
                     break;
                 case 4:
                     System.out.println("Xóa sinh viên:");
+                    studentController.deleteStudent();
                     break;
                 case 5:
                     return;
@@ -88,13 +91,15 @@ public class CodeGymManagement {
                     teacherController.displayTeacher();
                     break;
                 case 2:
-                    System.out.println("Thêm mới:");
+                    teacherController.addTeacher();
                     break;
                 case 3:
                     System.out.println("Chỉnh sửa:");
+                    teacherController.editTeacher();
                     break;
                 case 4:
                     System.out.println("Xóa giảng viên:");
+                    teacherController.deleteTeacher();
                     break;
                 case 5:
                     return;

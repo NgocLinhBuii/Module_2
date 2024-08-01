@@ -20,7 +20,7 @@ public class Teacher extends Person{
 
     @Override
     public String toString() {
-        return "Teacher{" +
+        return "Teacher: " +
                 "salary=" + salary +
                 '}' + super.toString();
     }

@@ -59,8 +59,7 @@ public abstract class Person {
 
     @Override
     public String toString() {
-        return
-                "id=" + id +
+        return "id=" + id +
                 ", code='" + code + '\'' +
                 ", name='" + name + '\'' +
                 ", birthday=" + birthday +
